@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    background-color: rgb(34, 34, 59);
+    user-select: none;
+
+}
+
+.number-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    
+}
+
+.number-btn {
+    background: linear-gradient();
+    color: white;
+    font-size: 20px;
+    height: 70px;
+    width: 70px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    background-color: transparent;
+
+} 
+
+.number-output {
+    color: white;
+    text-align: end;
+    width: 290px;
+    height: 65px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid yellow;
+    background-color: transparent;
+    font-size: 30px;
+    
+
+}
+.container {
+    border: 1px yellow solid;
+    border-radius: 20px;
+    padding: 35px;
+    background-color: rgba(55, 68, 58, 0.2);
+    box-shadow: 0px 1px 100px;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    background-color: blue;
+    height: 120px;
+    width: 120px;
+    left: 50px;
+    top: 40px;
+    filter: blur(90px);
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    background-color: purple;
+    height: 120px;
+    width: 120px;
+    right: 50px;
+    bottom: 40px;
+    filter: blur(90px);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input::placeholder {
+    color: white;
+}
